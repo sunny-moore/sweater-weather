@@ -3,7 +3,6 @@ require 'simplecov'
 SimpleCov.start
 
 require 'spec_helper'
-require 'support/factory_bot.rb'
 
 ENV['RAILS_ENV'] ||= 'test'
 require_relative '../config/environment'
@@ -67,9 +66,9 @@ RSpec.configure do |config|
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
 
-  RSpec.configure do |config|
-    config.include FactoryBot::Syntax::Methods
-  end
+
+  config.include FactoryBot::Syntax::Methods
+
 
   Shoulda::Matchers.configure do |config|
     config.integrate do |with|
@@ -78,7 +77,7 @@ RSpec.configure do |config|
     end
   end
   VCR.configure do |c|
-    c.cassette_library_dir = ‘spec/fixtures/vcr_cassettes’
+    c.cassette_library_dir = 'spec/fixtures/vcr_cassettes'
     c.hook_into :webmock
   end
 
