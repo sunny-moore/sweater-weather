@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.mapquestapi.com/geocoding/v1/address?key=7afN5JYAJ1T1plJdrY1qPRNlcEI1S1fA&location=portland,%20or
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.5.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Sun, 25 Sep 2022 23:05:13 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '1752'
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET,POST
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache, must-revalidate
+      Expires:
+      - Mon, 20 Dec 1998 01:00:00 GMT
+      Geocodetransactioncount:
+      - '1'
+      Last-Modified:
+      - Sun, 25 Sep 2022 23:05:13 GMT
+      Pragma:
+      - no-cache
+      Reversegeocodetransactioncount:
+      - '0'
+      Set-Cookie:
+      - JSESSIONID=B0EBCB09D68050F3F8998D91AB9CBFC1; Path=/; HttpOnly
+      Status:
+      - success
+      Transactionweight:
+      - '1.0'
+    body:
+      encoding: UTF-8
+      string: '{"info":{"statuscode":0,"copyright":{"text":"\u00A9 2022 MapQuest,
+        Inc.","imageUrl":"http://api.mqcdn.com/res/mqlogo.gif","imageAltText":"\u00A9
+        2022 MapQuest, Inc."},"messages":[]},"options":{"maxResults":-1,"thumbMaps":true,"ignoreLatLngInput":false},"results":[{"providedLocation":{"location":"portland,
+        or"},"locations":[{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Portland","adminArea5Type":"City","adminArea4":"Multnomah
+        County","adminArea4Type":"County","adminArea3":"OR","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282039059","unknownInput":"","type":"s","latLng":{"lat":45.516018,"lng":-122.681425},"displayLatLng":{"lat":45.516018,"lng":-122.681425},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=7afN5JYAJ1T1plJdrY1qPRNlcEI1S1fA&type=map&size=225,160&locations=45.516018,-122.681425|marker-sm-50318A-1&scalebar=true&zoom=12&rand=-755874448"},{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Portland","adminArea5Type":"City","adminArea4":"Multnomah
+        County","adminArea4Type":"County","adminArea3":"OR","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"421589463","unknownInput":"","type":"s","latLng":{"lat":45.516018,"lng":-122.681425},"displayLatLng":{"lat":45.516018,"lng":-122.681425},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=7afN5JYAJ1T1plJdrY1qPRNlcEI1S1fA&type=map&size=225,160&locations=45.516018,-122.681425|marker-sm-50318A-2&scalebar=true&zoom=12&rand=-349717919"}]}]}'
+  recorded_at: Sun, 25 Sep 2022 23:05:13 GMT
+recorded_with: VCR 6.1.0
