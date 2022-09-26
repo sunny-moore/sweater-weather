@@ -40,9 +40,6 @@ group :development, :test do
   gem 'pry'
   gem 'rspec-rails'
   gem 'shoulda-matchers'
-  gem 'vcr'
-  gem 'webmock'
-
 end
 
 group :development do
@@ -51,6 +48,8 @@ end
 
 group :test do
   gem 'simplecov'
+  gem 'vcr'
+  gem 'webmock'
 end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
